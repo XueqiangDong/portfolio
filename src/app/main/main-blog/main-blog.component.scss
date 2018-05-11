@@ -1,0 +1,19 @@
+@import "../../app.component";
+
+$minWidthSidenav: 200px;
+
+mat-sidenav-container mat-sidenav.sidnav {
+  margin-top: $marginTop;
+  min-width: $minWidthSidenav;
+  @media (max-width: 599px) {
+    min-width: $minWidthSidenav/2;
+    margin-top: 56px;
+  }
+  box-shadow: 6px 0 6px hsla(0,0,0,.2);
+}
+
+@media (max-width: 599px) {
+  .mat-small-test{
+
+  }
+}

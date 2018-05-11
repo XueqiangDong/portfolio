@@ -1,0 +1,10 @@
+mat-toolbar.header{
+  min-width: 400px;
+}
+mat-toolbar button.mat-button-resizeable {
+  width: 88px;
+  min-width: 55px;
+}
+.mat-button-stretch {
+  align-self: stretch;
+}

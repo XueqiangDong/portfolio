@@ -1,0 +1,15 @@
+$marginTop: 64px;
+
+div.flex-container{
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+div main.main{
+  margin-top: 64px;
+}
+
+div footer.footer {
+  flex: 0 0 auto;
+}

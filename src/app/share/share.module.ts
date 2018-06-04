@@ -12,6 +12,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import 'hammerjs';
 import {RouterModule} from "@angular/router";
+import {HttpClientModule} from "@angular/common/http";
 
 const MATERIAL_MODULES = [
   MatToolbarModule, MatSidenavModule, MatAutocompleteModule, MatButtonModule,
@@ -22,7 +23,7 @@ const MATERIAL_MODULES = [
 ];
 const COMMON_MODULES = [
   ...MATERIAL_MODULES, CommonModule, ReactiveFormsModule, FormsModule, FlexLayoutModule,
-  RouterModule,
+  RouterModule, HttpClientModule
 ];
 const EXPORT_COMPONENTS = [];
 

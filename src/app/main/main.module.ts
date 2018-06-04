@@ -9,7 +9,7 @@ import {MainRoutingModule} from "./main-routing.module";
 
 @NgModule({
   imports: [
-    ShareModule, MainRoutingModule
+    ShareModule, MainRoutingModule,
   ],
   exports:[
     MainBlogComponent, CobComponent,

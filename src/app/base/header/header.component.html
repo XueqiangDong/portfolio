@@ -1,14 +1,14 @@
 <mat-toolbar color="primary" class="header">
   <!--<button mat-icon-button (click)="openSideMenu()">-->
   <button class="mat-button mat-button-stretch" mat-button="" title="Blog menu"
-  (click)="onClickForToggleSidenav($event)" [hidden]="sidenavHidden">
+  (click)="onClickForToggleSidenav($event,{id:1})" [hidden]="sidenavHidden">
     <mat-icon class="mat-icon">menu</mat-icon>
   </button>
   <!--定义三个主要区域的路由-->
-  <button class="mat-button mat-button-resizeable" mat-button="" [routerLink]="['/home']">HOME</button>
+  <button class="mat-button mat-button-resizeable" mat-button="" (click)="onClickHome({id:2})" [routerLink]="['/home']">HOME</button>
   <button class="mat-button mat-button-resizeable" mat-button="" [routerLink]="['/blog']">BLOG</button>
   <button class="mat-button mat-button-resizeable" mat-button="" routerLink="/about">ABOUT</button>
-  <button class="mat-button mat-button-resizeable" mat-button="" (click)="onTest()">Test</button>
+  <button class="mat-button mat-button-resizeable" mat-button="" (click)="onTest({id:3})">Test</button>
   <!--增加这个span主要是将剩余空间填满，而使模式开关居右。-->
   <!--原理：mat-toolbar是个flex-container，它里面的flex-item不指定flex默认值的时候是flex: 0 1 auto-->
   <!--只有这个span的flex: 1 1 auto，所以剩余的空间都被这个item瓜分-->

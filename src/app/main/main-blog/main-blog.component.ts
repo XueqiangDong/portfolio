@@ -1,19 +1,25 @@
-import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
+import {Component, HostBinding, OnDestroy, OnInit} from '@angular/core';
 import {ToggleSidenavService} from "../../services/toggle-sidenav.service";
+import {slideToRight} from "../../anims";
 
 @Component({
   selector: 'app-main-blog',
   templateUrl: './main-blog.component.html',
-  styleUrls: ['./main-blog.component.scss']
+  styleUrls: ['./main-blog.component.scss'],
+  animations:[
+    slideToRight
+  ]
 })
 export class MainBlogComponent implements OnInit, OnDestroy {
 
-  sidenavOpened = false;
+  sidenavOpened = true;
+  @HostBinding('@routerAnim') state: string;
 
   constructor(private toggleSidenav: ToggleSidenavService) { }
 
   ngOnInit() {
-    this.toggleSidenav.sub.subscribe((event)=>{
+    this.toggleSidenav.sub.subscribe((data)=>{
+      console.log(data.id);
       this.sidenavOpened = !this.sidenavOpened;
     })
   }

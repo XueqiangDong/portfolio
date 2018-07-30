@@ -7,6 +7,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {BaseModule} from "./base/base.module";
 import {MainModule} from "./main/main.module";
 import {ToggleSidenavService} from "./services/toggle-sidenav.service";
+import {LocalStorageService} from "./services/local-storage.service";
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import {ToggleSidenavService} from "./services/toggle-sidenav.service";
     AppRoutingModule, BaseModule, MainModule, BrowserAnimationsModule
   ],
   providers: [
-    ToggleSidenavService
+    ToggleSidenavService, LocalStorageService
   ],
   bootstrap: [AppComponent]
 })

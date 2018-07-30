@@ -1,11 +1,21 @@
-<header class="fixed-top">
+<header class="header full-width">
   <app-header></app-header>
 </header>
-<div class="site flex-column flex-container">
-  <main class="full-width flex-grow-1 main">
-    <router-outlet></router-outlet>
-  </main>
-  <footer class="full-width flex-grow-0">
+<div class="main">
+  <mat-sidenav-container class="sidenav-container" [class.have-cob]="haveCob">
+    <mat-sidenav class="sidenav" [opened]="sidenavOpened" mode="side">
+      <app-sidenav-menu></app-sidenav-menu>
+    </mat-sidenav>
+    <mat-sidenav-content class="sidenav-content">
+      <div class="full-height">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <div class="cob">
+    <app-cob></app-cob>
+  </div>
+  <footer class="footer">
     <app-footer></app-footer>
   </footer>
 </div>

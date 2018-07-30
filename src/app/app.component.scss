@@ -1,15 +1,55 @@
-$marginTop: 64px;
-
-div.flex-container{
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
+.overflow-auto {
+  overflow: auto;
 }
 
-div main.main{
+header.header{
+  //grid-area: h;
+  position: fixed;
+  z-index: 999;
+}
+div.main {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  //padding-top: 80px;
+}
+
+div mat-sidenav-container.sidenav-container {
+  height: auto!important;
+  min-height: 100%;
+  z-index: 99;
+  //background: url("../assets/svg/bg/banner.svg") no-repeat right top;
+}
+div mat-sidenav-container mat-sidenav.sidenav{
+  position: fixed;
   margin-top: 64px;
+  padding: 10px;
+  width: 18%;
+  min-width: 160px;
+}
+mat-sidenav-content.sidenav-content {
+  height: auto!important;
+  //min-height: 100%;
+  margin-top: 64px;
+  padding: 10px 0 0 10px;
+}
+div.cob {
+  position: fixed;
+  margin-top: 64px;
+  top: 0;
+  right: 0;
+  width: 18%;
+  min-width: 160px;
+  padding: 10px;
+  background: aqua;
+  z-index: 97;
 }
 
 div footer.footer {
-  flex: 0 0 auto;
+  position: relative;
+  z-index: 98;
+}
+
+.have-cob {
+  max-width: 82%;
 }

@@ -13,6 +13,7 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import 'hammerjs';
 import {RouterModule} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
+import {LocalStorageService} from "../services/local-storage.service";
 
 const MATERIAL_MODULES = [
   MatToolbarModule, MatSidenavModule, MatAutocompleteModule, MatButtonModule,

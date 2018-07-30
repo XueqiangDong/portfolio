@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import {ToggleSidenavService} from "./toggle-sidenav.service";
 import {ShareModule} from "../share/share.module";
+import {LocalStorageService} from "./local-storage.service";
 
 @NgModule({
   imports: [
     ShareModule,
   ],
   exports:[
-    ToggleSidenavService,
+    ToggleSidenavService, LocalStorageService
   ],
   providers:[
-    ToggleSidenavService,
+    ToggleSidenavService, LocalStorageService
   ],
   declarations: [
 

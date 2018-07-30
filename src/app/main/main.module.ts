@@ -12,7 +12,7 @@ import {MainRoutingModule} from "./main-routing.module";
     ShareModule, MainRoutingModule,
   ],
   exports:[
-    MainBlogComponent, CobComponent,
+    MainBlogComponent, CobComponent, SidenavMenuComponent
   ],
   declarations: [
     SidenavMenuComponent, CobComponent, MainHomeComponent,

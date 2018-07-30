@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavMenuComponent implements OnInit {
 
+  sidenavOpened = true;
+
   constructor() { }
 
   ngOnInit() {

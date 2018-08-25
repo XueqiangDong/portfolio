@@ -1,3 +1,45 @@
-<p>
-  main-about works!
-</p>
+<h1>Rick Dong</h1><br>
+<h2>Qualifications</h2>
+<div>
+  <ul>
+    <li>Over 16-year experience in software engineering and professional knowledge of software development activities such as requirement analysis, design/prototype, coding/programming, review, test/validation, releases and software maintenance. Absolutely understanding of software development processes of Agile/Scrum/CMMI and software management such as configuration management, iterations, and version control as well as project management.</li>
+    <li>Solid programming skill in Javascript/ECMAScript/ES6/Typescript, Html5/CSS3 and libraries/frameworks such as Angular, Bootstrap, jQuery, RxJS as well as C, C++ and Java. Know well about Html tags, CSS layout, properties, layout, selectors, DOM, BOM, event, AJAX, Async, observable, JSON and Http.</li>
+    <li>Skilled developer in IT area: Web/front-end, Android apps, Linux, frameworks and automotive electronics by utilizing variety of IDEs and supporting tools such as Webstorm, Postman, Git/Github, Webpack, npm, Angular CLI, Chrome, Firefox, Edge, Photoshop, Eclipse, Android studio, NetBeans, QT, SVN, and QAC based on Object Oriented or Process Oriented Programming</li>
+    <li>Comprehensive knowledge in automotive industry such as embedded system, QNX, µC/OS-II, CAN/GMLAN, LIN, FlexRay, MOST, OSEK/AutoSAR, TS16949, I2C, I2S, SPI, UART, SDIO, GPIO, HMI, tuner, navigation, audio, video, media, DSP, DVD, BT, Wi-Fi, telematics, Diagnosis, KW2000, UDS, XCP, Monitoring, Cruise control, Idle control, Ignition and Injection, Knocking control, Miss fire, OBDII/EOBD, IMMO, SVPWM control</li>
+    <li>Professional knowledge of products development whole lifecycle starting with RFIs/RFQs, requirement analysis, customer specifications, system/product design, architecture, EBOM/MBOM optimize, Gerber, validation, trouble shooting and ending with SMT, DV/PVs, field tests, project releases</li>
+  </ul>
+</div>
+<h2>Professional Experience</h2>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+      <mat-panel-description>
+        Type your name and age
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="First name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Age">
+    </mat-form-field>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Self aware panel
+      </mat-panel-title>
+      <mat-panel-description>
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+</mat-accordion>
+<h2>Education</h2>

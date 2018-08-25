@@ -6,7 +6,7 @@ import {
   MatToolbarModule, MatCardModule, MatCheckboxModule, MatChipsModule,
   MatDatepickerModule, MatDialogModule, MatGridListModule, MatIconModule,
   MatInputModule, MatListModule, MatMenuModule, MatNativeDateModule,
-  MatProgressBarModule, MatRadioModule, MatSelectModule, MatTooltipModule,
+  MatProgressBarModule, MatRadioModule, MatSelectModule, MatTooltipModule, MatExpansionModule,
 } from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {FlexLayoutModule} from "@angular/flex-layout";
@@ -20,7 +20,7 @@ const MATERIAL_MODULES = [
   MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule,
   MatDatepickerModule, MatDialogModule, MatGridListModule, MatIconModule, MatTooltipModule,
   MatInputModule, MatListModule, MatMenuModule, MatNativeDateModule, MatSlideToggleModule,
-  MatProgressBarModule, MatRadioModule, MatSelectModule, MatTabsModule,
+  MatProgressBarModule, MatRadioModule, MatSelectModule, MatTabsModule, MatExpansionModule,
 ];
 const COMMON_MODULES = [
   ...MATERIAL_MODULES, CommonModule, ReactiveFormsModule, FormsModule, FlexLayoutModule,

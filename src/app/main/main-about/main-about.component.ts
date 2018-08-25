@@ -12,6 +12,7 @@ import {slideToRight} from "../../anims";
 export class MainAboutComponent implements OnInit {
 
   @HostBinding('@routerAnim') state: string;
+  panelOpenState: boolean = false;
 
   constructor() { }
 

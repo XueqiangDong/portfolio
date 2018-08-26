@@ -40,6 +40,10 @@ export class HeaderComponent implements OnInit {
     this.toggleSidenav.sub.next(data);
     this.sidenavButtonHidden = true;
   }
+  onClickProjects(data){
+    this.toggleSidenav.sub.next(data);
+    this.sidenavButtonHidden = true;
+  }
   //下面的测试代码，纯粹测试，务必用完删除
   onTest(data){
     this.toggleSidenav.sub.next(data);

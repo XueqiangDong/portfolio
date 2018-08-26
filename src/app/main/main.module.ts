@@ -6,6 +6,7 @@ import { MainHomeComponent } from './main-home/main-home.component';
 import { MainBlogComponent } from './main-blog/main-blog.component';
 import { MainAboutComponent } from './main-about/main-about.component';
 import {MainRoutingModule} from "./main-routing.module";
+import { MainProjectsComponent } from './main-projects/main-projects.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import {MainRoutingModule} from "./main-routing.module";
   ],
   declarations: [
     SidenavMenuComponent, CobComponent, MainHomeComponent,
-    MainBlogComponent, MainAboutComponent,
+    MainBlogComponent, MainAboutComponent, MainProjectsComponent,
   ]
 })
 export class MainModule { }

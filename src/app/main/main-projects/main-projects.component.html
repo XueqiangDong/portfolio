@@ -1,3 +1,38 @@
-<p>
-  main-projects works!
-</p>
+<mat-card class="project-card" (mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave($event)"
+          [@projectAnim]="isMouseEnter ? 'isMouseEnter' : 'isMouseLeave'">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Lottery</mat-card-title>
+    <mat-card-subtitle>Lucky with you</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="../../../assets/img/lottery-cover.jpg" alt="Photo project lottery">
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Details</button>
+  </mat-card-actions>
+</mat-card>
+<mat-card class="project-card" (mouseenter)="onMouseEnter1($event)" (mouseleave)="onMouseLeave1($event)"
+          [@projectAnim]="isMouseEnter1 ? 'isMouseEnter1' : 'isMouseLeave1'">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Lottery</mat-card-title>
+    <mat-card-subtitle>Lucky with you</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="../../../assets/img/lottery-cover.jpg" alt="Photo project lottery">
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Details</button>
+  </mat-card-actions>
+</mat-card>
